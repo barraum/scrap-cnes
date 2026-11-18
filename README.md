@@ -50,8 +50,6 @@ python cnes_cli.py --list
 SCRAP CNES/
 ├── iniciar.bat              # Menu de inicialização rápida (Windows)
 ├── iniciar_dashboard.bat    # Atalho direto para o Painel Web (Streamlit)
-├── configurar_git_primeira_vez.bat # Assistente automático de 1ª publicação no Git
-├── publicar_nuvem.bat       # Publicador em 1 clique (Compacta banco + Git Push)
 ├── app.py                   # Dashboard Web Interativo
 ├── cnes_cli.py              # Interface CLI de linha de comando
 ├── requirements.txt         # Dependências do projeto (Pip / Streamlit Cloud)

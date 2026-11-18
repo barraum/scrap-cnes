@@ -109,12 +109,15 @@ Já preparamos os arquivos necessários na raiz do projeto:
 3. **`.streamlit/config.toml`**: Configuração de tema e performance da aplicação.
 4. **Auto-descompactação (`cnes_core/database.py`)**: Ao iniciar na nuvem sem o arquivo `.db`, o sistema descompacta automaticamente `data/historico_cnes.db.gz` para uso imediato.
 
-### Etapa 2: Instalar o Git e Publicar no GitHub
-Você pode utilizar o script automático **`configurar_git_primeira_vez.bat`** (via terminal com Git instalado) ou o **GitHub Desktop**:
-1. Baixe e instale o [Git for Windows](https://git-scm.com/download/win) (ou via `winget install Git.Git`) ou o [GitHub Desktop](https://desktop.github.com/).
-2. Crie um repositório **Private** (Recomendado) no [GitHub](https://github.com/new) sem marcar README, `.gitignore` ou License.
-3. Execute **`configurar_git_primeira_vez.bat`** e cole a URL do repositório criado (ou, no GitHub Desktop, acesse **File > Add Local Repository**, selecione a pasta do projeto `SCRAP CNES`, crie o repositório, faça o commit inicial e clique em **Publish repository**).
-4. Para futuras atualizações da base local para a nuvem, basta executar **`publicar_nuvem.bat`** (que atualiza `data/historico_cnes.db.gz` e envia para o GitHub).
+### Etapa 2: Publicar e Atualizar no GitHub
+1. Crie um repositório **Private** (Recomendado) no [GitHub](https://github.com/new) e publique o código via Git (`git init`, `git add .`, `git commit`, `git push -u origin main`) ou via [GitHub Desktop](https://desktop.github.com/).
+2. Para atualizar o snapshot da base local na nuvem quando houver novos dados:
+   ```bash
+   python -c "from cnes_core.database import CNESDatabase; CNESDatabase.compress_db()"
+   git add data/historico_cnes.db.gz
+   git commit -m "Atualiza snapshot da base CNES"
+   git push
+   ```
 
 ### Etapa 3: Publicar no Streamlit Community Cloud
 1. Acesse [share.streamlit.io](https://share.streamlit.io/) e faça login com sua conta do GitHub.
