@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bancos de dados locais pesados (>50MB) e arquivos de lock
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/*.db-journal
+data/*.db-wal
+# Permite apenas o snapshot inicial compactado para deploy em nuvem
+!data/historico_cnes.db.gz
+
+# Planilhas e relatórios gerados
+output/*.xlsx
+output/*.csv
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+
+# Configurações com credenciais e segredos locais
+.env
+.streamlit/secrets.toml
+
+# Logs e arquivos temporários do sistema
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
