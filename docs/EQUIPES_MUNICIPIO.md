@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS equipes (
 
 ## 🖥️ Como Utilizar no Painel Streamlit
 
-1. Execute a aplicação via `iniciar.bat` ou `streamlit run app.py`.
+1. Execute a aplicação (`streamlit run app.py`).
 2. No menu lateral, acesse **`🩺 Equipes por Município`**.
 3. Escolha o modo de consulta:
    - **`🌐 Nova Extração da API (DATASUS)`**: Selecione um município do DRS VIII (ou digite um IBGE), aplique os pré-filtros (ex: *Administração Pública*) e clique em **`🩺 Extrair Equipes e Salvar no Repositório Local`**.

@@ -2,13 +2,6 @@
 
 Solução inteligente, enxuta e de alto desempenho para consulta, histórico por competência (`YYYYMM`) e exportação de dados públicos de estabelecimentos de saúde cadastrados no CNES (Cadastro Nacional de Estabelecimentos de Saúde / DATASUS).
 
-## ⚡ Inicialização Rápida no Windows (.bat)
-
-Basta dar um duplo clique nos arquivos executáveis na pasta do projeto:
-
-- **`iniciar.bat`**: Menu principal interativo (Painel Web, Consulta CLI, Histórico).
-- **`iniciar_dashboard.bat`**: Abre diretamente o Painel Web no navegador.
-
 ---
 
 ## 🌟 Principais Recursos
@@ -48,8 +41,6 @@ python cnes_cli.py --list
 
 ```
 SCRAP CNES/
-├── iniciar.bat              # Menu de inicialização rápida (Windows)
-├── iniciar_dashboard.bat    # Atalho direto para o Painel Web (Streamlit)
 ├── app.py                   # Dashboard Web Interativo
 ├── cnes_cli.py              # Interface CLI de linha de comando
 ├── requirements.txt         # Dependências do projeto (Pip / Streamlit Cloud)

@@ -50,7 +50,7 @@ A extração e armazenamento funcionam em três camadas:
 
 ## 🖥️ Como Utilizar no Dashboard Streamlit
 
-1. Execute a aplicação (via `iniciar.bat` ou `streamlit run app.py`).
+1. Execute a aplicação (`streamlit run app.py`).
 2. No menu lateral, acesse **`👥 Profissionais por Município`**.
 3. Escolha a origem dos dados:
    - **🌐 Nova Extração da API**: Informe o código IBGE (ex: `351620`), aplique os pré-filtros e clique em **Extrair e Salvar no Banco Local**.

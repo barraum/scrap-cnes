@@ -44,7 +44,7 @@ A extração utiliza a API REST oficial do CNES (`https://cnes.datasus.gov.br/se
 
 ## 🖥️ Como Utilizar no Dashboard Streamlit
 
-1. Execute a aplicação (via `iniciar.bat` ou `streamlit run app.py`).
+1. Execute a aplicação (`streamlit run app.py`).
 2. No menu lateral, acesse **`🏙️ Consulta por Município`**.
 3. Informe o código IBGE de 6 dígitos do município (exemplo: `351620` para Franca/SP ou `355030` para São Paulo/SP).
 4. Escolha o modo de extração:

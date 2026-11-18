@@ -36,3 +36,6 @@ desktop.ini
 # IDEs
 .vscode/
 .idea/
+
+# Scripts locais Windows
+*.bat
